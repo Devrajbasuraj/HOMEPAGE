@@ -1,0 +1,1 @@
+this is an static (contains frontend only) website which is my first project in any language it uses HTML,CSS,JS. it is an jersy store website where user can browse multiple jerses of various nations, clubs and read their information. and can add to cart those jersys. 
