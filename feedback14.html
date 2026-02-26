@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Submit Your Feedback</title>
+<style>
+body{
+font-family: Arial Rounded MT Bold;
+text-align: center;
+margin: 0;
+padding: 0;
+background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+.container {
+        width: 80%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #ff6600;
+        margin-bottom: 20px;
+    }
+
+    .feedback-form {
+        margin-top: 20px;
+        padding-right: 50px;
+    }
+
+    .feedback-form textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-left: 20px;
+        padding-right: 10px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+    }
+
+     button {
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+    .payment-method {
+   margin: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-method input[type="radio"] {
+   margin-right: 10px;
+  }
+  
+  .qr-code {
+   display: none;
+   margin-top: 20px;
+  }
+  .glow-effect {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-effect:focus {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="product(14).html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+                    <li><a href="HOMEPAGE.html"><i class="fa fa-home" aria-hidden="true"></i></li></ul></a>             
+        </nav>
+         </header>
+<div class="container">
+<h1>Thank you, your product is added to cart!</h1>
+
+<div class="rightside">
+  <form action="">
+    <h1>CheckOut</h1>
+    <h2>Payment Information</h2>
+    <p>Your Name</p>
+    <input type="text" id="name" class="glow-effect" placeholder="Enter Name">
+
+    <p>Your Address</p>
+    <input type="text" id="mobileNumber" class="glow-effect" placeholder="Enter Address">
+
+    <p>Mobile NO:-</p>
+    <input type="number" id="email" class="glow-effect" placeholder="Enter Number">
+
+
+    
+      <h2>Payment Method</h2>
+      <form>
+       <div>
+        <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+        <label for="cash-on-delivery">Cash on Delivery</label>
+       </div>
+       
+       <div>
+        <input type="radio" id="g-pay" name="payment-method" value="g-pay">
+        <label for="g-pay">G-Pay</label>
+       </div>
+       <div class="qr-code">
+        <img src="qr.jpg" alt="QR Code" height="500px">
+       </div>
+      </form>
+     
+
+
+   
+</div>
+    <p></p>
+    <button onclick="submitFeedback()">Submit</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<script>
+
+const gPayRadio = document.getElementById('g-pay');
+  const qrCodeDiv = document.querySelector('.qr-code');
+  
+  gPayRadio.addEventListener('change', () => {
+   if (gPayRadio.checked) {
+    qrCodeDiv.style.display = 'block';
+   } else {
+    qrCodeDiv.style.display = 'none';
+   }
+  });
+  
+// script.js
+function submitFeedback() {
+  // Get the input fields
+  const name = document.getElementById('name').value;
+  const mobileNumber = document.getElementById('mobileNumber').value;
+  const email = document.getElementById('email').value;
+  
+
+  // Check if the fields are empty
+  if (name === '' || mobileNumber === '' || email === '' ) {
+    // Display a popup message asking to fill the fields
+    alert('Please fill required fields');
+  } else {
+    // Display a popup message for successful submission
+    alert('Thank You! Your Details are Submited');
+  }
+}
+           
+</script>
+
+</body>
+</html>

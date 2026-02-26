@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="feedback page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+        <img src="logo.png" width="125px"></div>
+        <font face="Castellar" color="red"><h1>FUEL SPORTS SHOP</h1></font>
+        
+        <nav>
+            <font face="Arial Black" color="red">
+        <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i><a href="HOMEPAGE.html" > HOME</a></li>
+        <li><i class="fa fa-user-o" aria-hidden="true"></i><a href="about.html"> ABOUT US</a></li>
+        <li><i class="fa fa-futbol-o" aria-hidden="true"></i><a href="products.html"> PRODUCTS</a></li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="contact.html" >CONTACT US</a></li>
+        <li><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a href="feedback page.html" >FEEDBACK</a></li>
+            <li><i class="fa fa-comment-o" aria-hidden="true"></i>&nbsp;<a href="review.html" >REVIEW</a></li>
+        </font>
+        </nav>
+        
+        </div>
+        </div>
+        </div>
+    <main>
+        <section class="about-section">
+            
+            <div class="col">
+            <h1>FEEDBACK</h1>
+            </div>
+            <form id="feedbackForm">
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" class="name" placeholder="Enter Your Name"><br><br>
+                <label for="mobileNumber">Mobile Number:</label><br>
+                <input type="text" id="mobileNumber" name="mobileNumber" class="number" placeholder="Enter Your Number"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="mail" placeholder="Enter Your Email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" class="message" placeholder="Enter Your Message"></textarea><br><br>
+              <center> <input type="submit" value="Submit" class="submit-btn" onclick="submitFeedback()"></center> 
+              </form>
+            </section>
+            </body>
+
+    </main>
+           <script>
+// script.js
+function submitFeedback() {
+  // Get the input fields
+  const name = document.getElementById('name').value;
+  const mobileNumber = document.getElementById('mobileNumber').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Check if the fields are empty
+  if (name === '' || mobileNumber === '' || email === '' || message === '') {
+    // Display a popup message asking to fill the fields
+    alert('Please fill required fields');
+  } else {
+    // Display a popup message for successful submission
+    alert('Feedback submitted successfully');
+  }
+}
+           </script>
+</body>
+</html>

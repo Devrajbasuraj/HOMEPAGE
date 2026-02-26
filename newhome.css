@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: "Oswald", serif;
+
+    }
+    .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    }
+    nav{
+    flex:1;
+    text-align: right;
+    }
+    nav ul{
+    display: inline-block;
+    list-style-type: none
+    }
+    nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: coral;
+    }
+    a{
+    text-decoration: none;
+    color: #FFA500;
+    }
+    p{
+    color:rgb(255, 123, 0);
+    font-size: xx-large;
+    font-family: Bahnschrift Condensed;
+    }
+    .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left:25px;
+    padding-right:25px;
+    }
+    .row{
+        display: flex;
+        align-items: center
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col-2{
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .col-2 img{
+        
+        margin-right: 10px;
+         transform: translateY(-100px);
+         max-width: 130%;
+         margin-bottom: -125px;
+                  
+     }
+    .col-2 h1{
+        font-size: 70px;
+        line-height: 100px;
+        
+            }
+            .explore{
+                display: inline-block;
+                background-color: #FFA500;
+                color: rgb(255, 255, 255);
+                padding: 8px 30px;
+                margin: 30px 0;
+                border-radius: 30px;
+                transition: background 0.5s;
+            }
+            .explore:hover{
+                background: #563443;
+            }
+            .header{
+                background:radial-gradient(#fff,#f8e801);
+            }
+            .header .row{
+                margin-top: 70px;
+            }
+            .categories{
+                margin: 70px;
+
+            }
+            .col-3{
+                flex-basis: 30%;
+                min-width: 250px;
+                margin-bottom: 30px;
+                
+            }
+            
+            .small-container{
+                max-width: 2080px;
+                margin: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-top: 50px;
+                
+            }
+            .col-4{
+                flex-basis: 25%;
+                padding: 10px;
+                min-width: 300px;
+                
+                 align-items: center;
+                  }
+            
+            .Hot{
+                color: chocolate;
+                size: 30px;
+                height: 30px;
+                font-size: 50px;
+                padding-bottom: 70px;
+            }
+            .title{
+                text-align: center;
+                margin: 0 auto 80px;
+                position: relative;
+                line-height: 60px;
+                color: paleturquoise;
+            }
+            
+            .h4{
+                color: #FFA500;
+                font-weight: no;
+            }
+            .footer{
+                background: #000000;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 20px;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                padding-right: 20px;
+            }
+            .col-4{
+                flex-basis: 25%;
+                padding: 10px;
+                min-width: 200px;
+                
+                margin-bottom: 50px;
+                
+
+            }
+            .col-4 img{
+                width: 100%;
+            }
+            .rating {
+                display: flex;
+                justify-content: left;
+              }
+              
+              .star-icon {
+                color: #ffd700; /* Yellow color for filled stars */
+                font-size: 20px;
+                margin-right: 5px;
+              }
+              
+              .star-icon .fa-star-o {
+                color: #ccc; /* Gray color for empty stars */
+              }
+              
+              .font{
+                font-size: xx-large;
+                
+              }
+              d{
+                font-size: 22px;
+                color: rgb(216, 63, 36);
+              }
+              small{
+                font-size: 30px;
+                color: rgb(216, 63, 36);
+              }
+              .offer{
+                background:radial-gradient(#fff,#f8e801);
+                margin-top: 80px;
+                padding: 30px 0;
+                border-radius: 20px;
+                box-shadow: #000000;
+              }
+              .col-5 .offer-img{
+                padding: 20px;
+              }
+              .explore{
+                display: inline-block;
+                background-color: #FFA500;
+                
+                color: rgb(255, 255, 255);
+                padding: 8px 30px;
+                margin: 30px 0;
+                border-radius: 30px;
+                transition: background 0.5s;
+            }
+            .explore:hover{
+                background: #563443;
+            }
+            .feedback{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                margin-right: 20px;
+            }
+            .feedback .col-6{
+                text-align: left;
+                padding: 40px 20px;
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+                margin-left: 20px;
+                
+                border-radius: 20px;
+                cursor: pointer;
+                transition: 0.5s;      
+                }
+            .feedback .col-6 img{
+                width: 50px;
+                margin-top: 20px;
+                border-radius: 50%;
+            }
+            .feedback .col-6:hover{
+                transform: translateY(-5px);
+            }
+            fa-quote-left{
+                color: #FFA500;
+                            }
+            .no-bullets{
+                list-style-type: none;
+            }
+           
+              
+              
+              
+              
+                      
+            

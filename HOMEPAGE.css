@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(bg.jpeg);
+      background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    
+  }
+  
+  .header{
+    background:radial-gradient(#f7f7f7,#ffee00);
+    
+  }
+  .logo{
+    padding-left: 50px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+    }
+    nav{
+    flex:1;
+    text-align: right;
+    }
+    nav ul{
+    display: inline-block;
+    list-style-type: none
+    }
+    nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: coral;
+    }
+    nav ul li a{
+      color: coral;
+      text-decoration: none;
+      
+    }
+      
+             
+    
+   
+   
+        .row{
+            display: flex;
+            align-items: center
+            
+           
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            
+            margin-right: 10px;
+             transform: translateY(+10px);
+             max-width: 70%;
+             margin-bottom: -100px;
+             
+         }
+        
+      
+         
+        .col-2 h1{
+            font-size: 70px;
+            line-height: 100px;
+            color: #f7f7f7;   
+            transition: all 0.3s ease;
+            padding-left: 10px;         
+                }
+                .col-2 p{
+                    color: #f7f7f7;
+                    transition: all 0.3s ease;
+                    padding-left: 10px;     
+                }
+                .col-2 h1:hover{
+                    color: #FFA500;
+                }
+                .col-2 p:hover{
+                  color: #FFA500;
+              }
+                .explore{
+                    display: inline-block;
+                    background-color: #FFA500;
+                    color: rgb(255, 255, 255);
+                    padding: 8px 30px;
+                    margin: 30px 0;
+                    border-radius: 30px;
+                    transition: background 0.5s;
+                    text-decoration: none;
+                    margin-left: 10px;
+                }
+                .explore:hover{
+                    background: #563443;
+                }
